@@ -39,20 +39,20 @@
 
 // insertAt([2,3,4,5],0,1)
 
-// const removeAt = (arr,index) => {
+const removeAt = (arr,index) => {
 
-//     const val = arr[index]
+    const val = arr[index]
 
-//     for (let i = index ; i < arr.length ; i++) {
-//         if (i >= index) {
-//             arr[i] = arr[i+1]
-//         }
+    for (let i = index ; i < arr.length ; i++) {
+        if (i >= index) {
+            arr[i] = arr[i+1]
+        }
 
-//     }
-//     arr.pop()
+    }
+    arr.pop()
 
-// return val
-// }
+return val
+}
 
 
 // console.log(removeAt([1,2,3,4,5,6,7],4))
@@ -67,3 +67,17 @@
 //     return arr;
 // }
 // console.log(swapPairs([1,2,3,4,5,6,7]))
+
+function removeDups (arr) {
+    let first= arr[0]
+    for(let i = 1; i < arr.length;i++){
+        if (first === arr[i]){
+            removeAt(arr,i)
+        }
+        first = arr[i]
+        console.log(arr[i])
+}
+console.log(arr)
+}
+
+removeDups(["mohammed","jamal","jamal","mohammed","manal","manal"])
