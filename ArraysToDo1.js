@@ -28,13 +28,42 @@
 
 // popFront([1,2,3,4,5])
 
-insertAt = (arr,index,val) => {
-    for(let i = arr.length -1 ; i >= index ; i--) {
-        arr[i + 1] = arr[i]
-    }
-    arr[index] = val;
-    console.log(arr)
+// insertAt = (arr,index,val) => {
+//     for(let i = arr.length -1 ; i >= index ; i--) {
+//         arr[i + 1] = arr[i]
+//     }
+//     arr[index] = val;
+//     console.log(arr)
 
-}
+// }
 
-insertAt([2,3,4,5],0,1)
+// insertAt([2,3,4,5],0,1)
+
+// const removeAt = (arr,index) => {
+
+//     const val = arr[index]
+
+//     for (let i = index ; i < arr.length ; i++) {
+//         if (i >= index) {
+//             arr[i] = arr[i+1]
+//         }
+
+//     }
+//     arr.pop()
+
+// return val
+// }
+
+
+// console.log(removeAt([1,2,3,4,5,6,7],4))
+
+// const swapPairs = (arr) => {
+//     for (let i = 0; i < arr.length -1; i +=2 ) {
+//         const temp = arr[i]
+//         arr[i] = arr[i+1];
+//         arr[i+1] = temp;
+        
+//     }
+//     return arr;
+// }
+// console.log(swapPairs([1,2,3,4,5,6,7]))
